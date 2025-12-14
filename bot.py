@@ -62,7 +62,7 @@ class AntiOkClient(discord.Client):
 
             # 25% chance to reply
             if random.random() < 0.25:
-                await message.reply(f"STOP! You've said {TARGET_WORD} {count} times in this guild n*a.")
+                await message.reply(f"🚫 STOP! You've said {TARGET_WORD} {count} times in this guild n*a.")
 
 intents = discord.Intents.default()
 intents.message_content = True
